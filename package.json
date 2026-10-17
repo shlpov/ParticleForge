@@ -1,0 +1,60 @@
+{
+  "name": "particleforge",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Reusable particle animation engine for the web.",
+  "keywords": [
+    "particles",
+    "canvas",
+    "animation",
+    "typescript",
+    "library",
+    "webgl",
+    "motion"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ParticleForge.git"
+  },
+  "homepage": "https://github.com/your-username/ParticleForge#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/ParticleForge/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.1",
+    "vitest": "^2.1.8"
+  }
+}
